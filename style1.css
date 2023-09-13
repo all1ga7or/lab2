@@ -7,7 +7,46 @@ body{
     font: 20px Arial, sans-serif;
     color: rgb(255, 255, 114);
 }
+ul{
+    list-style-type: circle;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+li {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+    color: #bdba00;
+    display: block;
+    max-width: 300px;
+}
+a{
+    text-decoration: none;
+}
+li>a{
+    color: rgb(0, 182, 182);
+    font-style: italic;
+}
+li.link:hover{
+    background-color: rgb(0, 213, 255);
+    cursor: pointer;
+}
+li.link:hover a{
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+    font-style: normal;
+}
 
+li:hover {
+    background-color: #c1c1c1;
+}
 ul.task{
     display: flex;
     list-style-type: none;
@@ -19,7 +58,7 @@ ul.task{
 
 ul.task li{
     flex: 1;
-    padding: 10px auto;
+    padding: 10px 0;
     margin: 10px 10px;
     background-color: #f2f2f2;
     color: #bdba00;
@@ -42,43 +81,5 @@ ul.task li.yellow:hover {
     color: #ffffff;
 }
 
-a{
-    text-decoration: none;
-}
-a > li{
-    
-    color: rgb(0, 182, 182);
-    font-style: italic;
-}
-a > li:hover{
-    background-color: rgb(0, 213, 255);
-    color: #ffffff;
-    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
-    font-size: larger;
-    font-weight: bold;
-    font-style: normal;
-    cursor: pointer;
-}
 
-ul{
-    list-style-type: circle;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-li {
-    margin: 10px 0 10px 0;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease-in-out;
-    color: #bdba00;
-    display: block;
-    max-width: 300px;
-}
-li:hover {
-    background-color: #c1c1c1;
-}
 
